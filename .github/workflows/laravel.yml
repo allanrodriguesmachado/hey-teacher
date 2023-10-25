@@ -1,10 +1,8 @@
-name: Laravel
+name: CI
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main", "develop" ]
 
 jobs:
   laravel-tests:
@@ -28,8 +26,14 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
+    - name: Execute tests (Unit and Feature tests) via PEST
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+
+    - name: Execute Larastan
+      run: vendor/bin/phpstan analyse
+      
+    - name: Execute Laravel Pint
+      run: vendor/bin/pint --test
