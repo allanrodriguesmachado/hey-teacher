@@ -12,6 +12,20 @@
 
 Bem-vindo ao **Sistema de Perguntas e Respostas**, uma plataforma interativa onde usuários podem fazer perguntas, fornecer respostas, votar nas melhores respostas e discutir sobre diversos tópicos. Este projeto foi desenvolvido usando o framework Laravel, proporcionando uma experiência robusta e amigável aos usuários.
 
+# Tecnologias
+Frontend:
+
+    Tailwind CSS (v3.1.0): Framework CSS altamente personalizável.
+    Alpine.js (v3.4.2): Micro-framework JavaScript para interatividade no lado do cliente.
+    Vite (v4.5.0): Bundler rápido e moderno para projetos JavaScript.
+    Axios (v1.1.2): Biblioteca HTTP para requisições AJAX.
+
+Backend:
+
+    Laravel (v10.10)
+    Laravel Sanctum (v3.2)
+    Guzzle (v7.2)
+    Pest (v2.24.0)
 ## Funcionalidades Principais
 
 - **Cadastro e Login:** Usuários podem criar contas e fazer login de forma segura.
