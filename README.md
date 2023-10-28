@@ -8,7 +8,7 @@
 </p>
 
 
-**# Sistema de Perguntas e Respostas**
+# Sistema de Perguntas e Respostas
 
 Bem-vindo ao **Sistema de Perguntas e Respostas**, uma plataforma interativa onde usuários podem fazer perguntas, fornecer respostas, votar nas melhores respostas e discutir sobre diversos tópicos. Este projeto foi desenvolvido usando o framework Laravel, proporcionando uma experiência robusta e amigável aos usuários.
 
