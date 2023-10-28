@@ -8,3 +8,78 @@
 </p>
 
 
+**# Sistema de Perguntas e Respostas**
+
+Bem-vindo ao **Sistema de Perguntas e Respostas**, uma plataforma interativa onde usuários podem fazer perguntas, fornecer respostas, votar nas melhores respostas e discutir sobre diversos tópicos. Este projeto foi desenvolvido usando o framework Laravel, proporcionando uma experiência robusta e amigável aos usuários.
+
+## Funcionalidades Principais
+
+- **Cadastro e Login:** Usuários podem criar contas e fazer login de forma segura.
+- **Perguntas e Respostas:** Os usuários podem fazer perguntas, receber respostas e marcar as melhores respostas.
+- **Votação:** Sistema de votação para destacar as perguntas e respostas mais úteis.
+- **Comentários:** Funcionalidade de comentários para discutir detalhes adicionais.
+- **Administração:** Área de administração para gerenciar perguntas, respostas e usuários.
+
+## Requisitos
+
+- **PHP 8.1 ou superior**
+- **Composer:** Para gerenciamento de dependências.
+- **PgSQL|MySQL|Sqlite:** 
+
+## Instalação
+
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/allanrodriguesmachado/hey-teacher.git
+   ```
+
+2. **Acesse o Diretório do Projeto:**
+   ```bash
+   cd hey-teacher
+   ```
+
+3. **Instale as Dependências do Composer:**
+   ```bash
+   composer install
+   ```
+
+4. **Configure o Ambiente:**
+   - Copie o arquivo `.env.example` para `.env`.
+   - Configure as informações do banco de dados no arquivo `.env`.
+
+5. **Gere a Chave de Aplicação:**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Execute as Migrações e Seeders:**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+7. **Inicie o Servidor de Desenvolvimento:**
+   ```bash
+   php artisan serve
+   ```
+
+Acesse o sistema em `http://localhost:8000` e comece a explorar as funcionalidades.
+
+## Uso
+
+- **Perguntas:** Os usuários podem fazer perguntas e receber respostas da comunidade.
+- **Respostas:** Responda às perguntas dos outros usuários para compartilhar conhecimento.
+- **Votação:** Vote nas melhores perguntas e respostas para destacá-las.
+- **Comentários:** Comente nas perguntas e respostas para fornecer feedback adicional.
+- **Administração:** Acesse a área de administração em `/admin` para gerenciar conteúdo e usuários.
+
+## Contribuindo
+
+1. Faça um fork do repositório.
+2. Crie uma nova branch: `git checkout -b minha-feature`.
+3. Faça commit das suas alterações: `git commit -m 'Adiciona nova funcionalidade'`.
+4. Faça push para a branch: `git push origin minha-feature`.
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade para usar, modificar e distribuir conforme necessário.
