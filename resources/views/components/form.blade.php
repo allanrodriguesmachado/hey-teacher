@@ -4,7 +4,7 @@
     'put' => null,
     'patch' => null,
     'delete' => null
-]);
+])
 
 <form action="{{route('question.store')}}" method="post">
     @csrf
