@@ -2,7 +2,7 @@
     'label',
     'name',
     'placeholder'
-]);
+])
 
 <label
     for="{{$name}}"
