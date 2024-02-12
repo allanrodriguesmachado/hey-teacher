@@ -23,7 +23,7 @@ jobs:
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
     - name: Install Dependencies  # Passo para instalar as dependências do Composer
-      run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      run: composer install
 
     - name: Generate key  # Passo para gerar a chave de aplicação do Laravel
       run: php artisan key:generate
