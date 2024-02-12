@@ -17,7 +17,7 @@ jobs:
     - name: Setup PHP  # Passo para configurar a versão do PHP
       uses: shivammathur/setup-php@v2  # Usar a ação para configurar a versão do PHP
       with:
-        php-version: '8.1'  # Especificar a versão do PHP que deseja usar
+        php-version: '8.2'  # Especificar a versão do PHP que deseja usar
 
     - name: Copy .env  # Passo para copiar o arquivo .env se não existir
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
