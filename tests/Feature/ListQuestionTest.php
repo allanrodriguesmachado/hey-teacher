@@ -1,12 +1,16 @@
 <?php
 
+use App\Models\{Question, User};
+
+use function Pest\Laravel\{actingAs, get};
+
 it('sould list all the questions', function () {
-    $user      = \App\Models\User::factory()->create();
-    $questions = \App\Models\Question::factory()->count(5)->create();
+    $user      = User::factory()->create();
+    $questions = Question::factory()->count(5)->create();
 
-    \Pest\Laravel\actingAs($user);
+    actingAs($user);
 
-    $response = \Pest\Laravel\get(route('dashboard'));
+    $response = get(route('dashboard'));
 
     foreach ($questions as $question) {
         $response->assertSee($question->question);
